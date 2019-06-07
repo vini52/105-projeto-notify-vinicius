@@ -65,14 +65,14 @@ header div h1 span{
     color: #31cb71;
 }
 aside{
-    background-color: orange;
+    background-color: white;
     grid-area: aside;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 aside div{
-    background-color: #31cb71;
+    background-color: white;
     display: flex;
     justify-content: space-between;
     height: 100%;
@@ -80,7 +80,42 @@ aside div{
 }
 aside div header, aside div section, aside div footer{
     background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     width: 30%;
+}
+aside div header div, aside div section div, aside div footer div{
+    border-radius: 100%;
+    background-color: #31cb71;
+    height: 70px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+aside div header div img, aside div section div img, aside div footer div img{
+    width: 35px;
+    height: 35px;
+}
+aside div header h2, aside div section h2, aside div footer h2{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+aside div header p, aside div section p, aside div footer p{
+    font-family: 'Roboto', sans-serif;
+    color: gray;
+    text-align: center;
+}
+aside div header{
+    
+}
+aside div section{
+    
+}
+aside div footer{
+    
 }
 section{
     background-color: red;
