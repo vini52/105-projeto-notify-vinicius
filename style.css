@@ -1,7 +1,7 @@
 body{
     display: grid;
     grid-template-areas: 'nav' 'header' 'aside' 'section' 'div' 'footer';
-    grid-template-rows: 8px 550px 50vh 50vh 50vh 12vh;
+    grid-template-rows: 8px 550px 50vh 50vh 70vh 12vh;
     margin: 0;
 }
 nav{
@@ -162,9 +162,60 @@ section div aside iframe{
     height: 85%;
     width: 90%;
 }
-div{
+.div-linha5{
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     grid-area: div;
+}
+.div-linha5 .alinhar-paragrafo{
+    width: 70%;
+}
+.div-linha5 h4, .div-linha5 p, .div-linha5 h3{
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.div-linha5 h4{
+    font-style: italic;
+}
+.div-linha5 h4, .div-linha5 p{
+    color: gray;
+}
+.div-linha5 div{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+.div-linha5 div a{
+    height: 50px;
+}
+.div-linha5 div a:hover{
+    height: 50px;
+    width: 50px;
+    opacity: 0.7;
+    transition: 0.6s;
+}
+.div-linha5 header{
+    background: none;
+    display: flex;
+    justify-content: space-between;
+    width: 20%;
+}
+.div-linha5 header a{
+    height: 32px;
+}
+.div-linha5 header a:hover{
+    height: 32px;
+    border-radius: 100%;
+    background-color: #31cb71;
+    opacity: 0.8;
+    transition: 0.6s;
+}
+.div-linha5 h2{
+    font-size: 20pt;
+    font-family: 'Roboto', sans-serif;
 }
 footer{
     background-color: #e3e3e3;
