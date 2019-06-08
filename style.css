@@ -268,7 +268,7 @@ footer div a{
 }
 @media(max-width:625px){
     body{
-        grid-template-rows: 8px 550px 100vh 80vh 100vh 10vh;
+        grid-template-rows: 8px 550px 100vh 80vh 120vh 10vh;
     }
     header div{
         width: 85%;
