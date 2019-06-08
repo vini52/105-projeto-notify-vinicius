@@ -237,7 +237,29 @@ footer div a{
     font-family: 'Roboto', sans-serif;
 }
 @media(max-width: 768px){
+    header div{
+        width: 55%;
+    }
     .heigth-img{
         display: none;
+    }
+    aside div footer{
+        width: 33%;
+    }
+    section div div form input{
+        width: 190px;
+    }
+    section div aside iframe{
+        height: 50%;
+        width: 100%;
+    }
+    .div-linha5 div{
+        display: block;
+    }
+    .div-linha5 header{
+        width: 30%;
+    }
+    footer div{
+        width: 70%;
     }
 }
