@@ -110,7 +110,7 @@ aside div header p, aside div section p, aside div footer p{
     text-align: center;
 }
 section{
-    background-color: lightgray;
+    background-color: #e3e3e3;
     grid-area: section;
     display: flex;
     justify-content: center;
@@ -167,6 +167,21 @@ div{
     grid-area: div;
 }
 footer{
-    background-color: lightgray;
+    background-color: #e3e3e3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     grid-area: footer;
+}
+footer div{
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+footer div a{
+    color: gray;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
 }
