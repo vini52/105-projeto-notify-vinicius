@@ -1,7 +1,7 @@
 body{
     display: grid;
     grid-template-areas: 'nav' 'header' 'aside' 'section' 'div' 'footer';
-    grid-template-rows: 8px 550px 50vh 50vh 50vh 50vh;
+    grid-template-rows: 8px 550px 50vh 50vh 50vh 12vh;
     margin: 0;
 }
 nav{
@@ -23,6 +23,7 @@ header div{
 header div h1{
     font-family: 'Pacifico', cursive;
     font-size: 34pt;
+    font-weight: 90;
 }
 header div h3{
     font-family: 'Roboto', sans-serif;
@@ -108,24 +109,64 @@ aside div header p, aside div section p, aside div footer p{
     color: gray;
     text-align: center;
 }
-aside div header{
-    
-}
-aside div section{
-    
-}
-aside div footer{
-    
-}
 section{
-    background-color: red;
+    background-color: lightgray;
     grid-area: section;
+    display: flex;
+    justify-content: center;
+}
+section div{
+    width: 90%;
+    background: none;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+section div div{
+    background: none;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    height: 80%;
+    text-align: justify;
+    align-items: flex-start;
+    width: 45%;
+}
+section div div form{
+    display: flex;
+}
+section div div form input{
+    border: none;
+    border-radius: 10px 0 0 10px;
+    font-family: 'Roboto', sans-serif;
+    height: 30px;
+    padding: 10px;
+    width: 250px;
+}
+section div div form button{
+    border: none;
+    border-radius: 0 10px 10px 0;
+    background-color: #31cb71;
+    cursor: pointer;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16pt;
+    width: 100px;
+}
+section div aside{
+    background: none;
+    width: 50%;
+    height: 100%;
+}
+section div aside iframe{
+    height: 85%;
+    width: 90%;
 }
 div{
-    background-color: yellow;
+    background-color: white;
     grid-area: div;
 }
 footer{
-    background-color: purple;
+    background-color: lightgray;
     grid-area: footer;
 }
