@@ -268,7 +268,7 @@ footer div a{
 }
 @media(max-width:475px){
     body{
-        grid-template-rows: 8px 550px 100vh 80vh 100vh 12vh;
+        grid-template-rows: 8px 550px 100vh 80vh 100vh 10vh;
     }
     header div{
         width: 85%;
@@ -312,5 +312,9 @@ footer div a{
     }
     .div-linha5 header{
         width: 60%;
+    }
+    footer div{
+        justify-content: space-around;
+        width: 100%;
     }
 }
