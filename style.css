@@ -236,3 +236,8 @@ footer div a{
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
 }
+@media(max-width: 768px){
+    .heigth-img{
+        display: none;
+    }
+}
