@@ -160,6 +160,7 @@ section div aside{
 }
 section div aside iframe{
     height: 85%;
+    max-width: 70%;
     width: 90%;
 }
 .div-linha5{
@@ -236,6 +237,11 @@ footer div a{
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
 }
+@media(max-width: 1024px){
+    .div-linha5 div{
+        display: block;
+    }
+}
 @media(max-width: 768px){
     header div{
         width: 55%;
@@ -253,13 +259,58 @@ footer div a{
         height: 50%;
         width: 100%;
     }
-    .div-linha5 div{
-        display: block;
-    }
     .div-linha5 header{
         width: 30%;
     }
     footer div{
         width: 70%;
+    }
+}
+@media(max-width:475px){
+    body{
+        grid-template-rows: 8px 550px 100vh 80vh 100vh 12vh;
+    }
+    header div{
+        width: 85%;
+    }
+    aside div{
+        width: 100%;
+        display: grid;
+        grid-template-areas: 'header' 'section' 'footer';
+    }
+    aside div header{
+        grid-area: header;
+        width: 100%;
+    }
+    aside div section{
+        grid-area: section;
+        width: 100%;
+    }
+    aside div footer{
+        grid-area: footer;
+        width: 100%;
+    }
+    section div{
+        display: grid;
+        grid-template-areas: 'div' 'aside';
+        width: 100%;
+    }
+    section div div{
+        width: 100%;
+    }
+    section div div form{
+        width: 100%;
+    }
+    section div div form input{
+        width: 100%;
+    }
+    section div aside{
+        width: 100%;
+    }
+    section div aside iframe{
+        height: 100%;
+    }
+    .div-linha5 header{
+        width: 60%;
     }
 }
